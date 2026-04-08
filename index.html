@@ -8,82 +8,90 @@
 </head>
 
 <body>
-    <h1>Formulário de Adoção </h1>
-
-    <form id="FormulárioAdoção">
-        <label for="nome">Nome:</label>
-        <imput type="text" id="nome" placeholder="Digite seu nome">
+    <div class="FormulárioAdoção">
+        <form>
+            <h1>Formulário de Adoção </h1>
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" placeholder="Digite seu nome" required>
+            <br>
             <br>
             <label for="Email">Email:</label>
-            <imput type="Email" id="Email" placeholder="Digite seu email">
-                <br>
-                <label for="">Telefone:</label>
-                <imput type="Telefone" id="Telefone" placeholder="Digite seu Telefone">
-                    <br>
-                    <label for="CPF">CPF:</label>
-                    <imput type="CPF" id="email" placeholder="Digite seu CPF">
-                        <br>
-                        <label for="Idade">Idade:</label>
-                        <imput type="Idade" id="email" placeholder="Digite sua idade">
-                            <br>
-                            <label for="Cidade">Cidade:</label>
-                            <imput type="Cidade" id="Cidade" placeholder="Digite sua Cidade">
-                                <br>
-                                <label for="moradia">Moradia</label>
-                                <select name="moradia" : id="moradia">
-                                    <option value=""> Selecione</option>
-                                    <option value="casa">Casa</option>
-                                    <option value="apartamento">Apartamento</option>
-                                </select>
-                                <br>
-                                <label for="Quintal">Possui quintal?:</label>
-                                <imput type="radio" name="Quintal" value="sim">Sim
-                                    <imput type="radio" name="Quintal" value="nao">Não
-                                        <br>
-                                        <label for="Pet">Ja teve pet ?:</label>
-                                        <imput type="radio" name="Pet" value="sim">Sim
-                                            <imput type="radio" name="Pet" value="nao">Não
-                                                <br>
-                                                <label for="horas">Quanto tempo o pet ficará sozinho?</label>
-                                                <imput type="number" id="horas">
-                                                    <br>
-                                                    <label for="motivo">Motivo da Adoção do Pet?</label>
-                                                    <br>
-                                                    <textarea name="motivo" id="motivo"></textarea>
-                                                    <br>
-                                                    <label for="permite">Permite pets? (Apartamento)</label>
-                                                    <imput type="checkbox" id="permite">
-                                                        <br>
-                                                        <label for="permite">Possui quintal Seguro?</label>
-                                                        <imput type="checkbox" id="seguro">
-                                                            <br>
-                                                            <label for="permite">Possui condições financeiras?</label>
-                                                            <imput type="checkbox" id="financeiro">
-                                                                <br>
-                                                                <label for="impulso">Aceito o termo:</label>
-                                                                <imput type="checkbox" id="termo">
-                                                                    <br>
-                                                                    
+            <input type="Email" id="Email" placeholder="Digite seu email">
+            <br>
+            <br>
+            <label for="telefone">Telefone:</label>
+            <input type="telefone" id="telefone" placeholder="47999999999" required>
+            <br>
+            <br>
+            <label for="cpf">CPF:</label>
+            <input type="cpf" id="cpf" placeholder="99999999999" required>
+            <br>
+            <br>
+            <label for="idade">Idade:</label>
+            <input type="idade" id="idade" placeholder="18" required>
+            <br>
+            <br>
+            <label for="cidade">Cidade:</label>
+            <input type="cidade" id="cidade" placeholder="Digite sua Cidade">
+            <br>
+            <br>
+            <label for="moradia">Moradia</label>
+            <select name="moradia" : id="moradia">
+                <option value="selecione"> Selecione</option>
+                <option value="casa">Casa</option>
+                <option value="apartamento">Apartamento</option>
+            </select>
+            <br>
+            <br>
+            <label for="quintal">Possui quintal?:</label>
+            <input type="radio" name="quintal" value="sim">Sim
+            <input type="radio" name="quintal" value="nao">Não
+            <br>
+            <br>
+            <label for="Pet">Ja teve pet ?:</label>
+            <input type="radio" name="pet" value="sim">Sim
+            <input type="radio" name="pet" value="nao">Não
+            <br>
+            <br>
+            <label for="horas">Quanto tempo o pet ficará sozinho?</label>
+            <input type="number" id="horas">
+            <br>
+            <br>
+            <label for="motivo">Motivo da Adoção do Pet?</label>
+            <br>
+            <br>
+            <textarea name="motivo" id="motivo"></textarea>
+            <br>
+            <br>
+            <label for="permite">Permite pets? (Apartamento)</label>
+            <input type="checkbox" id="permite">
+            <br>
+            <br>
+            <label for="permite">Possui quintal Seguro?</label>
+            <input type="checkbox" id="seguro">
+            <br>
+            <br>
+            <label for="permite">Possui condições financeiras?</label>
+            <input type="checkbox" id="financeiro">
+            <br>
+            <br>
+            <label for="impulso">Decidiu adotar hoje:</label>
+            <input type="checkbox" id="impulso">
+            <br>
+            <br>
+            <label for="impulso">Aceito o termo:</label>
+            <input type="checkbox" id="termo">
+            <br>
+            <br>
+            <button type="submit">Enviar</button>
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    </form>
+        </form>
+        <h2 id="resultado"></h2>
+        <script src="adocao.js"></script>
+    </div>
 </body>
 
 </html>

@@ -1,9 +1,35 @@
-    h1 {
-        background-color: blue;
-        text-align: center;
-    }
-    .formulario {
-        align-items:center;
+    .FormulárioAdoção {
+        background-color: rgb(255, 255, 255);
         display: flex;
         flex-direction: column;
+        padding: 20px;
+        border-radius: 10px;
+        width: 350px;
+        margin: 30px auto;
+        box-shadow: 0 0 15px rgb(12, 82, 212);
+        text-align: center;
+        color: rgb(0, 183, 255);
     }
+
+    body {
+        background-image: url(assests/planodefundo.png);
+    }
+
+    select {
+        margin-bottom: 10px;
+        width: 100%;
+        padding: 10px;
+        border-radius: 5px;
+        border: 1px solid #000000;
+
+    }
+
+    label {
+        display: block;
+        margin-bottom: 8px;
+        font-weight: 600;
+        font-size: 0.9rem;
+        color: #444;
+    }
+    
+    

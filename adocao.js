@@ -1,13 +1,12 @@
 document.getElementById("FormularioAdoção").addEventListener("submit", function (e) {
 
-    let nome = document, getElementById("nome").value;
-    let email = document, getElementById("email").value;
-    let Telefone = document, getElementById("Telefone").value;
-    let CPF = document, getElementById("CPF").value;
-    let Idade = document, getElementById("Idade").value;
-    let Cidade = document, getElementById("Cidade").value;
-    let moradia = document, getElementById("moradia").value;
-    let nome = document, getElementById("nome").value;
+    let nome = document.getElementById("nome").value;
+    let email = document.getElementById("email").value;
+    let telefone = document.getElementById("telefone").value;
+    let cpf = document.getElementById("cpf").value;
+    let idade = document.getElementById("idade").value;
+    let cidade = document.getElementById("cidade").value;
+    let moradia = document.getElementById("moradia").value;
     let quintal = document.querySelector('input[name="quintal"]:checked');
     let pet = document.querySelector('input[name="pet"]:checked');
     let horas = document.getElementById("horas").value;
@@ -77,20 +76,3 @@ document.getElementById("FormularioAdoção").addEventListener("submit", functio
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-}
